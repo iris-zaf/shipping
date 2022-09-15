@@ -9,9 +9,26 @@
     <meta name="handheldFriendly" content="true" />
     <title>Copy of MEDCARGO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="./shipping.css" />
+
     <script
       src="https://kit.fontawesome.com/3210cf72d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -19,10 +36,10 @@
     <div class="header">
       <div class="title">
         <i class="fa fa-globe-americas fa-4x"></i>
-        <h1 class="big-title">
+        <div class="big-title">
           MEDCARGO
           <div class="small-title">D. THEODORIKAS SHIPPING S.A.</div>
-        </h1>
+        </div>
       </div>
       <div class="section1">
         <ul>
@@ -30,12 +47,107 @@
           <li>About</li>
           <li>Services</li>
           <li>Get in Touch</li>
-        
-          <li><i class="fa fa-map-marker-alt"></i>
-          <i class="fa fa-facebook-f"></i>
-        <i class="fa fa-linkedin"></i></li>
+
+          <li>
+            <i class="fa fa-map-marker-alt"></i>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-linkedin"></i>
+          </li>
         </ul>
       </div>
-    
+
+      <!--carousel-->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./close-up.jpg" class="w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./Packaging-Factory.webp" class="w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./Air-Carrier-Booking.webp" class="w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./trucks-rail.jpg" class="w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./boxes2.jpg" class="w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="services">
+      <span>The Service You Deserve</span>
+      <p class="services-small">
+        Since 1982, our talented team works hard to provide the best services
+        for our clients. We customize our offerings based on specific needs, get
+        in touch with us today to receive a quote.
+      </p>
+    </div>
+    <div class="more-text">
+      <div class="imageBoxes">
+        <img src="./boxes.jpg" />
+      </div>
+      <div class="MoreAbout">
+        <div class="titleAbout">More About Us</div>
+        <div class="textAbout">
+          <p>
+            MEDCARGO is a privately owned company, established in 1982 by
+            Dimitris Theodorikas, with headquarters in Pireus and a branch
+            office in Thessaloniki as well as affiliated companies in Pristina,
+            Kosovo and Skopje, North Macedonia.
+          </p>
+          <br />
+          <p>
+            Having built a solid network of worldwide partners throughtout out
+            long-standing presence in the industry, we bring to you the oprtimum
+            combination of cost, speed, safety and quality.
+          </p>
+          <br />
+          <p>
+            Our company specializes in air, sea and inland transport, as well as
+            logistics and customs services. Yet, we do not restrict ourselves to
+            conventional business functions, but aim to adapt to your specific
+            needs and provide tailor-made solutions
+          </p>
+          <br />
+          <p>
+            Our highly-trained personnel is there to offer you prompt assistance
+            and creative alternatives by relying on our strong network
+            philosophy. Our unrivalled expertise and flexibility along with our
+            personal approach have rendered Medcargo a leader in the industry
+            and the ideal partner for you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
