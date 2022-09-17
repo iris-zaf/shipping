@@ -1,5 +1,9 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Avenir.woff") format("woff"),
+    url("../fonts/Avenir.ttf") format("truetype"),
+    url("../fonts/Avenir.svg#Avenir") format("svg");
 }
 
 .header {
@@ -15,9 +19,7 @@
 .title {
   display: inline-flex;
 }
-.big-title {
-  letter-spacing: 100px;
-}
+
 .title i {
   margin-top: 30px;
 }
@@ -53,7 +55,7 @@
 }
 
 /*carousel */
-.carousel-item {
+.carousel-item img {
   height: 653px;
   object-fit: cover;
 }
@@ -65,7 +67,7 @@
   line-height: 1.25em;
   font-size: 60px;
   color: rgb(44, 44, 44);
-  font-weight: 10px;
+  font-weight: 100;
   text-transform: uppercase;
   background: rgb(235, 228, 228);
   padding-bottom: 111px;
@@ -111,48 +113,148 @@
   margin-right: 160px;
   font-size: 20px;
 }
-@media (max-width: 800px) and (min-width: 350px) {
+.profServices h2 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 4.2em;
+  font-size: 50px;
+}
+.imageProfServices img {
+  height: 617px;
+  width: 1007px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+.textSeaTrans h3 {
+  font-size: 33px;
+  text-align: center;
+  line-height: 4em;
+}
+.textSeaTrans {
+  position: relative;
+  margin: 24px 230px 39px calc((100% - 980px) * 0.5);
+  left: -100px;
+  grid-area: 5 / 1 / 6 / 2;
+}
+.no1 {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 18px;
+}
+.textSeaTrans h4 {
+  text-align: center;
+  line-height: 4.875em;
+}
+.no2 {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 18px;
+}
+.no3 {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 18px;
+}
+.listFCL li {
+  line-height: 1.875em;
+  text-align: center;
+  font-size: 18px;
+  list-style: inside;
+}
+.no4 {
+  line-height: 6.875em;
+  text-align: center;
+  font-size: 18px;
+}
+.textSeaTrans button {
+  text-align: center;
+  height: 6vh;
+  width: 15vw;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
   * {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
   }
   .title .big-title {
-    margin-right: 100px;
+    letter-spacing: 1px;
   }
   .section1 li {
     margin: 30px;
     color: white;
-    margin-left: 70px;
+    margin-left: 10px;
+  }
+  .section1 ul {
+    padding-left: 0px;
   }
   .section1 ul i {
-    margin-block-end: -65px;
+    padding: 1px;
+    margin-left: -31px;
+    width: 60px;
   }
   .services span {
     font-size: 49px;
     text-shadow: 1px 0px 2px rgb(11, 6, 6);
   }
   .services-small {
-    margin-inline-start: 10px;
+    margin-inline-start: 0px;
     margin-inline-end: 0;
     font-size: 20px;
   }
 
   .header .section1 li {
-    display: flex;
+    display: block;
   }
   .imageBoxes {
     width: 10px;
     height: 10px;
+  }
+  .imageBoxes img {
+    max-width: 100vw;
+    height: 883px;
   }
   .MoreAbout .titleAbout {
     font-weight: 300px;
     text-shadow: -3px 3px 6px rgb(11, 6, 6);
     -webkit-text-stroke: 0px rgb(203, 203, 203);
   }
+  .titleAbout {
+    margin-left: -3px;
+  }
   .textAbout {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
-    text-shadow: -3px 3px 6px rgb(11, 6, 6);
+    text-shadow: 12px 4px 4px rgb(11 6 6);
     -webkit-text-stroke: 0px rgb(203, 203, 203);
+    margin-left: 0px;
+  }
+  .carousel-item {
+    height: 416px;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 0;
+  }
+  .profServices h2 {
+    line-height: 2.2em;
+    text-shadow: 1px 0px 2px rgb(11 6 6);
+    font-size: 41px;
+  }
+  .imageProfServices img {
+    width: 444px;
+    height: 570px;
+    max-width: 100vw;
+  }
+  .textSeaTrans {
+    margin: 21px 0px 22px calc((100% - 256px) * 0.5);
+  }
+}
+@media (max-width: 450px) {
+  .imageBoxes img {
+    width: 437px;
+    height: 1282px;
   }
 }
